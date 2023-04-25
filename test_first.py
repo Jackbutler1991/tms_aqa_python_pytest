@@ -51,3 +51,5 @@ def test_deleviry_21_vek(browser):
     current_url = browser.current_url
     assert current_url == 'https://www.youtube.com/'
 #    assert cookie_sel.is_displayed()
+
+
