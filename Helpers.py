@@ -43,9 +43,30 @@ class BasePage:
         self.browser.execute_script("arguments[0].scrollIntoView();", locator)
         locator.click()
         return locator
+    def click_xpath(self, selector):
+        locator = self.get_element_xpath(selector)
+        self.browser.execute_script("arguments[0].scrollIntoView();", locator)
+        locator.click()
+        return locator
+    def get_element_xpath(self, selector):
+        return WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.XPATH, selector)))
 
     def get_element(self, selector):
         return WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, selector)))
 
     def assert_that_element_is_selected(self, selector):
         return self.get_locator_by_css(selector).is_selected()
+
+    def assert_that_element_is_selected_xpath(self, selector):
+        return self.get_locator_by_xpath(selector).is_selected()
+
+    def assert_that_element_is_not_selected_xpath(self, selector):
+        return self.get_locator_by_xpath(selector).is_selected() == False
+
+    def open_iframe(self, locator):
+        return self.browser.switch_to.frame(self.browser.find_element(By.XPATH, locator))
+
+    def scroll_to_xpath(self, selector):
+        locator = self.get_element_xpath(selector)
+        self.browser.execute_script("arguments[0].scrollIntoView();", locator)
+        return locator
