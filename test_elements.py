@@ -79,3 +79,15 @@ def test_check_radiobatton(browser):
     browser.save_screenshot("test(Radio)button).png")
     text = browser.find_element(By.XPATH, '//*[@id="app"]/div/div/div[2]/div[2]/div[2]/p/span')
     assert text.text  == 'Impressive'
+
+def test_select_value_from_dropdown(browser):
+    base_page = BasePage(browser)
+    base_page.browser.get('https://demoqa.com/select-menu')
+    base_page.select_value_from_dropdown(ElementsObject.elem1)
+    base_page.select_value_from_dropdown(ElementsObject.elem2)
+    time.sleep(1)
+    select_elem1 = base_page.get_text(ElementsObject.elem_test)
+    time.sleep(1)
+    assert select_elem1 == "Group 2, option 1"
+
+
