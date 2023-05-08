@@ -1,7 +1,5 @@
 from page_objects.BasePage import BasePage
 
-
-
 class NasaPage(BasePage):
     LOGO = '//*[@id="navbar-nasa"]//img'
     MENU_MISSION = '//*[@id="nasa-main-menu"]/li[2]//span[1]'

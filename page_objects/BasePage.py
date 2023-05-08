@@ -41,11 +41,13 @@ class BasePage:
         self.browser.execute_script("arguments[0].scrollIntoView();", locator)
         locator.click()
         return locator
+
     def click_xpath(self, selector):
         locator = self.get_element_xpath(selector)
         self.browser.execute_script("arguments[0].scrollIntoView();", locator)
         locator.click()
         return locator
+
     def get_element_xpath(self, selector):
         return WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.XPATH, selector)))
 

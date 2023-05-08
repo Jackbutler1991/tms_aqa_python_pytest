@@ -1,8 +1,17 @@
-from locators.BaseLocators import get_locator_by_xpath
+from locators.BaseLocators import get_locator_by_id
 from elements.element import Element
 class ContainerLocators():
-    LOGO_ver2 = Element(get_locator_by_xpath('"navbar-nasa"]//img'))
-    LOGO = get_locator_by_xpath('"navbar-nasa"]//img')
+    LOGO_ver2 = Element(get_locator_by_id('"navbar-nasa"]//img'))
+    LOGO = get_locator_by_id('"navbar-nasa"]//img')
+
+    HEAD_MISSIONS = get_locator_by_id('"nasa-main-menu"]/li[2]/a/span[1]')
+    HEAD_MISSIONS_DROPDOWN_OPEN = ('//*[@id="nasa-main-menu"]/li[2]')
+
+
+
+
+
+
 
 
 
