@@ -1,22 +1,26 @@
+import time
+
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
+
 class BasePage:
     def __init__(self, browser):
         self.browser = browser
-
+    @allure.step('Получить локатор CSS')
     def get_locator_by_css(self, selector):
         # .slass_name
         css = (By.CSS_SELECTOR, selector)
         return self.browser.find_element(*css)
-
+    @allure.step('Получить локатор XPATH')
     def get_locator_by_xpath(self, selector):
         # div[@class="et_pb_button_wrapper"]
         # //*[@id='button1']
         xpath = (By.XPATH, selector)
         return self.browser.find_element(*xpath)
-
+    @allure.step('Получить локатор ID')
     def get_locator_by_id(self, selector):
         id = (By.ID, selector)
         return self.browser.find_element(*id)
@@ -77,3 +81,12 @@ class BasePage:
 
     def get_text(self, selector):
         return self.get_locator_by_xpath(selector).text
+
+    def get_current_url(self):
+        current_url = self.browser.current_url
+        return current_url
+
+    def singin(self):
+        self.browser.get('https://pal.hq.nasa.gov/app/PalLogin.aspx')
+        self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]').send_keys('AlexanderParniushka')
+        self.browser.find_element(By.XPATH, '//*[@id="uxPassword"]').send_keys('83BYqe_+')

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f980d9d-a225-4869-a9db-688b8f05531d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/allure-tmp/043b11eb-30a9-458b-b816-c9cb8a15c648-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/04dc5014-c898-4f94-a00b-7cabfbf310e6-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/04e93696-4941-4abf-8c23-b9f76cd17d3e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/061dfbdc-3a14-4a51-aae0-3e27b5e6887b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/07a668c1-274f-4366-9559-2f6b6ba28c53-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/0a26c2d4-21ba-4c2a-89e8-c34028ad1a9e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/0d346b88-ed43-43b0-8e86-341e8dac5907-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/13642f15-4fc2-4252-9093-566058ace104-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/136ff2ff-4456-4879-9a77-e72d3ab48fe5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/167de934-d251-48bd-9b56-fb18cb8864ae-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/185c5825-d71f-42a4-a937-78f379e23ddd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/1932119f-caac-4158-b142-dbba047b5a4d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/1b51961d-5b49-4900-82d1-1d0469446109-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/1c4001cc-251b-4d84-ab0a-31456c79f4b4-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/1c60e2b8-22b7-43fb-937f-50820933a81c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/205f0e06-bd1a-42d3-b701-28c0f07462ba-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/2180312e-6243-4578-adac-793fbadfcf28-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/22edb4d9-06e0-41bb-a8bd-d78b52bd522f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/241eb722-0d43-437c-8793-5dccb6f54af9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/269fcfcb-3ac8-48f9-aa7d-d93226430a51-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/281c4be1-df47-42fd-ad69-02f49f01695e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/29139146-3481-4184-9dce-77c7cb8b5cf1-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/2aa9eac0-fc56-4004-bf92-0313a958602e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/32829867-e352-4fb8-a876-39f8e113732b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/34c86308-fe4a-48c3-891a-bc326600e4b9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/3a0db773-cb17-479d-a70b-b88fe81c7c2d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/3a448d71-b136-4da0-8b36-5ee1c2f2cae2-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/3ca8108b-bf6b-47a3-946c-328068b52742-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/40c96d21-0430-466b-a0ae-c71d945cbe00-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/41360349-3ede-4ea9-9fe7-28338373713a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/42d71df0-6066-4f00-b31c-840a80210770-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/4adfe4b5-35e5-4ed2-81e7-e2413aba13a9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/4b10c6fe-0bc7-460d-8149-d5dc646d4dc0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/4ca039b0-16df-4eb6-b80d-c4348f652cb4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/50a8e5a0-48c2-4456-b9c3-37d967350afd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/510bd3c8-a495-42b8-abe0-2ef114011503-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/58882113-075f-4988-86c6-3dbf6f291d2c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/592feeb0-345e-437c-a99d-e6764d995a97-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/5f7efaf1-4c3c-494f-9dfd-c85f7d659add-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/5fe4d97f-d6d9-4477-a2ca-39fbbaf64ca7-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/664a1f7f-6018-48e3-bf99-9a63a81c6b75-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/72235e37-f602-4ac9-9651-871e976e5c00-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/723ddd3d-d959-491e-b03f-9e6cf14345bb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/72dd9132-cc15-40d1-abeb-0c3f3291306b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/744c1d43-07b7-455e-a5b3-0f6d805a194c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/74a64d0e-17bb-49bb-bb18-f5e1320d0f5a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/74d33b58-0515-4a50-b6a0-a1508a54eced-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/75110af6-567e-430d-abf7-ce886451a0ce-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/76977fca-26b0-43dc-af43-53707d2f7d30-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/7a13c9c2-757b-42cb-88ba-37731206d229-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/7e2d395a-3877-4a41-864a-d97172a81945-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/7e9d7cd8-115d-4dfc-a8c8-688dfe1f0e60-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/7fb9baab-2309-43f6-b9e3-d0a820d26dc5-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/803d37bb-272b-43fd-994d-9924f78da20c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/808aec60-702c-4e99-ba00-c9a4955cf190-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/82de03be-5fc3-4d83-b4f0-2f2a5c88f690-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/83079b53-d620-4d0e-8149-c34572d29a1c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/88c8c61d-09d2-4e17-9e2e-a7620972c068-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/891413df-ea20-4e24-b247-253063dcce3b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/8ee2d81e-cf82-4ccf-a42b-e758734def37-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/927143a6-af91-448b-92b9-0603b34c0b8a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/92f65e11-47a0-44e0-bf97-9ac5901373d0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/94111f3f-bb34-4b8e-a148-24181ef40fdd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/982b1232-d015-4abe-bb66-9e624fbbe5d8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/a162bf18-c6c5-4c74-a958-66a86c473133-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/a5d86ee0-eeb5-466b-b030-16a9f5d426c7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/a7808fbd-7c24-41f2-8dca-6450d7f84a82-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/b22f78fe-fbdd-4f86-a525-9fef4be9b829-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/b386a487-a9fb-4a23-85b7-37c1ade97421-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/b761ba87-b161-47d5-b851-c441afa24c0c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/b9564095-4b20-4e7d-99b7-ce2c0ee9b596-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/b99fb599-0d44-49aa-8a35-4a7b975860e5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/bd6c382c-106a-459d-b174-983b08154758-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/c1210a9f-44de-412e-b587-e6621095080f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/c3c4b661-2a91-4f6f-bc20-c6f9c61e644c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/c87d2360-9e60-4e8a-b5ba-68f0923298dd-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/c923c269-c6fa-45e9-8502-64b864596c03-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/d0400c41-7119-4129-a0d3-fc2cd64c8767-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/d2a28552-f22e-4ba6-b9a7-76eb14777f78-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/d739512b-007d-460c-9f2e-779ba966edf0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/da38d8c1-dca8-4afa-8906-ec3fcfaa356f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/dabc86e6-2041-4ce6-9e34-6fc16fd11535-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/db63c080-49b6-4e50-9237-c0366234528e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/de8875ec-cfb7-4460-b824-66737925132b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/e107a641-10b9-4008-a972-c48b02d30dfa-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/e21bafcb-1529-465a-89d0-9f42a2544131-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/e31e8206-1503-441d-b00d-640be62c607e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/e47284f5-f36c-468e-8e34-ccedc9248878-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/e4a2f4b3-ab59-491c-bc09-ea84c89e0865-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/e9fcff1d-9bd4-44b6-ac0a-ed2d9fb2d2db-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/ea8304fd-e7eb-4750-8a4e-303d43043c8e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/eda07eb8-377f-4d41-b038-b82109a29f6c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/f4f49acd-1c6c-467f-9035-056b2a97ce8c-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/f81697bf-e262-49e5-87d9-b6c113957a16-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/f8713c39-751a-4185-8eae-aea4fb610459-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/f9c96e72-13a8-49c1-a42f-d5e9dea40f1f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/fc19eedd-550d-4587-af7b-40d0c61d0e7a-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-tmp/ff30ded1-cbdd-4a06-8a49-9e14cfc18144-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/base_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/container.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_elements/container.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_elements/container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/BasePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test(Radio)button).png" beforeDir="false" afterPath="$PROJECT_DIR$/test(Radio)button).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1(2).png" beforeDir="false" afterPath="$PROJECT_DIR$/test1(2).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_NasaPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_NasaPage.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OuiHwUokf8aaMnBx3R3Hws6Yb8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Jack_Butler/PycharmProjects/pythonProject/page-elements"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jack_Butler\PycharmProjects\pythonProject\page-elements" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jack_Butler\PycharmProjects\pythonProject\core" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_api.test_get_respons">
+    <configuration name="pytest for core.test_api.test_api_cat" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;core.test_api.test_api_cat&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for core.test_api.test_api_dog" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;core.test_api.test_api_dog&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.test_api_cat" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_cat&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.test_api_dog" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_dog&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.test_get_respons" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_get_respons&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_api.test_get_respons" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_cat" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_dog" />
+        <item itemvalue="Python tests.pytest for core.test_api.test_api_cat" />
+        <item itemvalue="Python tests.pytest for core.test_api.test_api_dog" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f980d9d-a225-4869-a9db-688b8f05531d" name="Changes" comment="" />
+      <created>1682416784085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682416784085</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
