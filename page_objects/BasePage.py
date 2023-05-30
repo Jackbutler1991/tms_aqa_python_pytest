@@ -4,6 +4,7 @@ import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.keys import Keys
 from locators.container import ContainerLocators
 
 class BasePage:
@@ -93,3 +94,6 @@ class BasePage:
     def element_is_visible(self, locator):
         check = self.get_locator_by_xpath(locator)
         return check
+    def push_enter(self, selector):
+        locator = self.get_element_xpath(selector)
+        locator.send_keys(Keys.ENTER)

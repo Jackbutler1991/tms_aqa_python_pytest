@@ -7,11 +7,6 @@ from page_elements.container import ContainerElement
 def test_logo(browser, open_page):
     container = ContainerElement(browser)
     container.asser_that_logo_visible()
-@allure.title('Тест отображения логотипа.2')
-def test_logo_ver2(browser, open_page):
-    container = ContainerElement(browser)
-    container.asser_that_logo_visible_ver2()
-
 @allure.title('Тест отображения поля поиска')
 def test_search_is_visible(browser, open_page):
     container = ContainerElement(browser)
@@ -44,10 +39,31 @@ def test_head_menu_humans_in_space(browser, open_page):
     browser.fullscreen_window()
     container.click_head_menu_humans_in_space()
     container.check_open_page_humans_in_space()
+@allure.title('Тест отображения логотипа.2')
+def test_logo_ver2(browser, open_page):
+    container = ContainerElement(browser)
+    container.asser_that_logo_visible_ver2()
+#FOOTER_NASA_GOV
 @allure.title('Тест отображения текста в футере')
 def test_text_in_footer(browser, open_page):
     container = ContainerElement(browser)
     container.check_elem()
+@allure.title('Тест открытия страницы "Privacy" в футере')
+def test_open_privacy_in_footer(browser, open_page):
+    container = ContainerElement(browser)
+    browser.fullscreen_window()
+    container.open_privacy_page()
+@allure.title('Тест открытия страницы "Accessability" в футере')
+def test_open_accessability_in_footer(browser, open_page):
+    container = ContainerElement(browser)
+    browser.fullscreen_window()
+    container.open_accessability_page()
+@allure.title('Тест открытия страницы "Special Counsel" в футере')
+def test_open_special_counsel_in_footer(browser, open_page):
+    container = ContainerElement(browser)
+    browser.fullscreen_window()
+    container.open_special_counsel_page()
+#BODY_NASA_GOV
 @allure.title('Тест отображения текста в блоке "События"')
 def test_text_nasa_events(browser, open_page):
     container = ContainerElement(browser)
@@ -104,3 +120,49 @@ def test_search_input_special(browser, open_page):
     container.search_input_special()
     container.search_click()
     container.text_search_special()
+@allure.title('Тест поика по сайту, ввод спец символов (нажатие ENTER)')
+def test_search_input_special_enter(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_special()
+    container.enter()
+    container.text_search_special()
+@allure.title('Тест поика по сайту, ввод одного символа')
+def test_search_input_one_symbol(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_one_symbol()
+    container.search_click()
+    container.text_search_one_symbol()
+@allure.title('Тест поика по сайту, ввод одного символа (нажатие ENTER)')
+def test_search_input_one_symbol_enter(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_one_symbol()
+    container.enter()
+    container.text_search_one_symbol()
+
+@allure.title('Тест поика по сайту, ввод спец символов')
+def test_search_input_more_255_symbols(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_more255_symbol()
+    container.search_click()
+    container.text_search_more255_symbol()
+@allure.title('Тест поика по сайту, ввод спец символов (нажатие ENTER)')
+def test_search_input_more_255_symbols_enter(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_more255_symbol()
+    container.enter()
+    container.text_search_more255_symbol()
+@allure.title('Тест поика по сайту, ввод кириллицы')
+def test_search_input_another_language(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_another_language()
+    container.search_click()
+    container.text_search_another_language()
+
+@allure.title('Тест поика по сайту, ввод кириллицы (нажатие ENTER)')
+def test_search_input_another_language_enter(browser, open_page):
+    container = ContainerElement(browser)
+    container.search_input_another_language()
+    container.enter()
+    container.text_search_another_language()
+
+

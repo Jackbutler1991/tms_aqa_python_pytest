@@ -122,6 +122,21 @@ class ContainerElement(BasePage, ContainerLocators):
         current_url = self.get_current_url()
         assert current_url == 'https://www.nasa.gov/stem'
 
+    def open_privacy_page(self):
+        self.click_xpath(self.locator.PRIVACY)
+        current_url = self.get_current_url()
+        assert current_url == 'https://www.nasa.gov/about/highlights/HP_Privacy.html'
+
+    def open_accessability_page(self):
+        self.click_xpath(self.locator.ACCESSIBILITY)
+        current_url = self.get_current_url()
+        assert current_url == 'https://www.nasa.gov/feature/accessibility-statement/'
+
+    def open_special_counsel_page(self):
+        self.click_xpath(self.locator.SPECIAL_COUNSEL)
+        current_url = self.get_current_url()
+        assert current_url == 'https://osc.gov/'
+
     def search_input(self):
         self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('moon')
         time.sleep(1)
@@ -143,3 +158,31 @@ class ContainerElement(BasePage, ContainerLocators):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
         print(text_element)
         assert text_element == "Sorry, no results found for '++-'. Try entering fewer or more general search terms."
+
+    def search_input_one_symbol(self):
+        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('1')
+
+    def text_search_one_symbol(self):
+        text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
+        print(text_element)
+        assert text_element == "Please enter a search term in the box above."
+
+    def search_input_more255_symbol(self):
+        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys(self.locator.SEARCH_MORE255_SYMBOLS)
+
+    def text_search_more255_symbol(self):
+        text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
+        print(text_element)
+        assert text_element == "Your search term is too long. Try again using a shorter word or phrase."
+
+    def search_input_another_language(self):
+        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('луна')
+
+    def text_search_another_language(self):
+        text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
+        print(text_element)
+        assert text_element == "Sorry, no results found for 'луна'. Try entering fewer or more general search terms."
+
+    def enter(self):
+        self.push_enter(self.locator.SEARCH_INPUT)
+
