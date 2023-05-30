@@ -1,8 +1,11 @@
+from datetime import datetime
+
 import pytest
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from webdriver_manager.core.utils import ChromeType
 from selenium.webdriver.common.by import By
+import time
 
 @pytest.fixture
 def browser():
@@ -11,7 +14,7 @@ def browser():
 
     yield driver
 
-#    driver.close()
+    driver.close()
 #    driver.quit()
 
 @pytest.fixture

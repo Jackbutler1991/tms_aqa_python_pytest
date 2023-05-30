@@ -4,7 +4,7 @@ import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-
+from locators.container import ContainerLocators
 
 class BasePage:
     def __init__(self, browser):
@@ -52,6 +52,10 @@ class BasePage:
         locator.click()
         return locator
 
+    def check_text_by_xpath(self, selector):
+        locator = self.get_element_xpath(selector).text
+        return locator
+
     def get_element_xpath(self, selector):
         return WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.XPATH, selector)))
 
@@ -86,7 +90,6 @@ class BasePage:
         current_url = self.browser.current_url
         return current_url
 
-    def singin(self):
-        self.browser.get('https://pal.hq.nasa.gov/app/PalLogin.aspx')
-        self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]').send_keys('AlexanderParniushka')
-        self.browser.find_element(By.XPATH, '//*[@id="uxPassword"]').send_keys('83BYqe_+')
+    def element_is_visible(self, locator):
+        check = self.get_locator_by_xpath(locator)
+        return check
