@@ -1,13 +1,13 @@
-from locators.BaseLocators import get_locator_by_id
-from elements.element import Element
+from page_objects.locators.base_locators import get_locator_by_id
+
 class ContainerLocators():
-    LOGO_ver2 = Element(get_locator_by_id('"navbar-nasa"]//img'))
+
     LOGO = get_locator_by_id('"navbar-nasa"]//img')
 
     #HEADER
-    SEARCH = get_locator_by_id('"ember24"]')
-    SEARCH_INPUT = get_locator_by_id('"ember21"]')
-    SEARCH_BUTTON = get_locator_by_id('"ember24"]')
+    SEARCH = get_locator_by_id('"ember20"]')
+    SEARCH_INPUT = get_locator_by_id('"ember20"]')
+    SEARCH_BUTTON = get_locator_by_id('"ember23"]')
     SEARCH_MOON = get_locator_by_id('"news-items"]//h3')
     SEARCH_NO_RESULT = get_locator_by_id('"no-results"]/div')
     SEARCH_MORE255_SYMBOLS = ('12345678910123456789101234567891012345678910'
@@ -29,7 +29,6 @@ class ContainerLocators():
     FLIGHT = get_locator_by_id('"nasa-main-menu"]/li[1]//li[5]/a')
     SOLAR_SUSTEM = get_locator_by_id('"nasa-main-menu"]/li[1]//li[6]/a')
     STEM_ENGAGEMENT = get_locator_by_id('"nasa-main-menu"]/li[1]//li[7]/a')
-
 
 
     #BODY

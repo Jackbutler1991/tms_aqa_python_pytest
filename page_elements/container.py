@@ -2,8 +2,9 @@ import time
 
 from selenium.webdriver.common.by import By
 
-from page_objects import BasePage
-from locators.container import ContainerLocators
+from base_page import BasePage
+from page_objects.locators.nasa_page import ContainerLocators
+
 
 class ContainerElement(BasePage, ContainerLocators):
     def __init__(self, browser):
@@ -19,6 +20,7 @@ class ContainerElement(BasePage, ContainerLocators):
     def search_is_visible(self):
         check = self.element_is_visible(self.locator.SEARCH)
         assert check.is_displayed()
+
     def bg_card_canvas_is_visible(self):
         check = self.element_is_visible(self.locator.BG_CARD_CANVAS)
         assert check.is_displayed()
@@ -60,17 +62,22 @@ class ContainerElement(BasePage, ContainerLocators):
     def is_displayed_menu_missions(self):
         check = self.get_locator_by_xpath(self.locator.HEAD_MISSIONS_DROPDOWN_OPEN)
         assert check.is_displayed()
+
     def click_head_menu_galleries(self):
         self.get_locator_by_xpath(self.locator.HEAD_GALLERIES)
+
     def is_displayed_menu_galleries(self):
         check = self.get_locator_by_xpath(self.locator.HEAD_GALLERIES_DROPDOWN_OPEN)
         assert check.is_displayed()
+
     def click_head_menu_humans_in_space(self):
         self.click_xpath(self.locator.HUMANS_IN_SPACE)
+
     def check_open_page_humans_in_space(self):
         time.sleep(1)
         current_url = self.get_current_url()
         assert current_url == 'https://www.nasa.gov/topics/humans-in-space'
+
     def singin_fqia(self):
         self.browser.get('https://pal.hq.nasa.gov/app/PalLogin.aspx')
         self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]').send_keys(self.TEST_LOGIN)
@@ -86,26 +93,6 @@ class ContainerElement(BasePage, ContainerLocators):
 
     def click_head_menu_humans_in(self):
         self.click_xpath(self.locator.SIGN_IN_BUTTON)
-
-    def test_test(self):
-#        self.browser.switch_to.frame(self.browser.find_element(By.XPATH, locator))
-        ck = self.browser.switch_to.frame(self.browser.find_element(By.XPATH, '//*[@id="validationmessage"]'))
-        print(ck)
-
-
-#        sk = self.browser.switch_to.frame(self.browser.find_element(By.XPATH, '//*[@id="errorModal"]/div/div/div[1]/h4'))
-#        print(sk)
-#        check_text = self.browser.find_element(By.XPATH, '//*[@id="errorModal"]/div/div/div[1]/h4')
-#        check_text_1 = check_text.getText()
-
-
-#
-
-#        text = self.browser.find_element(By.XPATH, '//*[@id="errorModal"]//h4')
-#        text_test = text.getText();
-
-#        print(text_test)
-#        assert text = '//*[@id="errorModal"]//h4'
 
     def open_flight_page(self):
         self.click_xpath(self.locator.FLIGHT)
@@ -185,4 +172,3 @@ class ContainerElement(BasePage, ContainerLocators):
 
     def enter(self):
         self.push_enter(self.locator.SEARCH_INPUT)
-

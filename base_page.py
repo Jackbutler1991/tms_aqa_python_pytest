@@ -1,30 +1,32 @@
-import time
-
 import allure
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-from locators.container import ContainerLocators
+
+
 
 class BasePage:
     def __init__(self, browser):
         self.browser = browser
+
     @allure.step('Получить локатор CSS')
     def get_locator_by_css(self, selector):
         # .slass_name
         css = (By.CSS_SELECTOR, selector)
         return self.browser.find_element(*css)
+
     @allure.step('Получить локатор XPATH')
     def get_locator_by_xpath(self, selector):
         # div[@class="et_pb_button_wrapper"]
         # //*[@id='button1']
         xpath = (By.XPATH, selector)
         return self.browser.find_element(*xpath)
-    @allure.step('Получить локатор ID')
-    def get_locator_by_id(self, selector):
-        id = (By.ID, selector)
-        return self.browser.find_element(*id)
+
+#    @allure.step('Получить локатор ID')
+#    def get_locator_by_id(self, selector):
+#        id = (By.ID, selector)
+#       return self.browser.find_element(*id)
 
     def get_locator_by_slass_name(self, selector):
         # class_name
@@ -41,7 +43,7 @@ class BasePage:
         xpath = (By.XPATH, f'// *[contains(text(),"{text}")]')
         return self.browser.find_element(*xpath)
 
-    def click(self, selector, by="css"):
+    def click(self, selector):
         locator = self.get_element(selector)
         self.browser.execute_script("arguments[0].scrollIntoView();", locator)
         locator.click()
@@ -58,10 +60,10 @@ class BasePage:
         return locator
 
     def get_element_xpath(self, selector):
-        return WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.XPATH, selector)))
+        return WebDriverWait(self.browser, 10).until(ec.element_to_be_clickable((By.XPATH, selector)))
 
     def get_element(self, selector):
-        return WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, selector)))
+        return WebDriverWait(self.browser, 10).until(ec.element_to_be_clickable((By.CSS_SELECTOR, selector)))
 
     def assert_that_element_is_selected(self, selector):
         return self.get_locator_by_css(selector).is_selected()
@@ -94,6 +96,7 @@ class BasePage:
     def element_is_visible(self, locator):
         check = self.get_locator_by_xpath(locator)
         return check
+
     def push_enter(self, selector):
         locator = self.get_element_xpath(selector)
         locator.send_keys(Keys.ENTER)

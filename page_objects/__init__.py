@@ -1,3 +1,2 @@
-from .BasePage import BasePage
-from .NasaPage import NasaPage
+from .nasa_page import NasaPage
 

@@ -1,11 +1,8 @@
-from datetime import datetime
-
 import pytest
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from webdriver_manager.core.utils import ChromeType
-from selenium.webdriver.common.by import By
-import time
+
 
 @pytest.fixture
 def browser():
@@ -15,38 +12,34 @@ def browser():
     yield driver
 
     driver.close()
-#    driver.quit()
+    driver.quit()
+
 
 @pytest.fixture
 def open_page(browser):
     browser.get('https://www.nasa.gov/')
+    browser.fullscreen_window()
 
-# set up a hook to be able to check if a test has failed
-@pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item, call):
-    # execute all other hooks to obtain the report object
-    outcome = yield
-    rep = outcome.get_result()
-    # set a report attribute for each phase of a call, which can
-    # be "setup", "call", "teardown"
-    setattr(item, "rep_" + rep.when, rep)
 
-# check if a test has failed
-@pytest.fixture(scope="function", autouse=True)
-def test_failed_check(request):
-    yield
-    # request.node is an "item" because we use the default
-    # "function" scope
-    if request.node.rep_setup.failed:
-        print("setting up a test failed!", request.node.nodeid)
-    elif request.node.rep_setup.passed:
-        if request.node.rep_call.failed:
-            driver = request.node.funcargs['selenium_driver']
-            take_screenshot(driver, request.node.nodeid)
-            print("executing test failed", request.node.nodeid)
+@pytest.fixture
+def open_no_fear_act_page(browser):
+    browser.get(
+        "https://www.nasa.gov/offices/odeo/no-fear-act"
+    )
+    browser.fullscreen_window()
 
-# make a screenshot with a name of the test, date and time
-def take_screenshot(driver, nodeid):
-    time.sleep(1)
-    file_name = f'{nodeid}_{datetime.today().strftime("%Y-%m-%d_%H:%M")}.png'.replace("/","_").replace("::","__")
-    driver.save_screenshot(file_name)
+
+@pytest.fixture
+def open_freedom_of_information_act_page(browser):
+    browser.get(
+        "https://www.nasa.gov/FOIA/index.html"
+    )
+    browser.fullscreen_window()
+
+
+@pytest.fixture
+def open_sign_in_page(browser):
+    browser.get(
+        "https://pal.hq.nasa.gov/"
+    )
+    browser.fullscreen_window()

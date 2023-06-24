@@ -1,4 +1,4 @@
-from page_objects.BasePage import BasePage
+from base_page import BasePage
 
 class NasaPage(BasePage):
     LOGO = '//*[@id="navbar-nasa"]//img'
