@@ -1,6 +1,7 @@
 import allure
 from page_objects.pages.nasa_gov import NasaPage
 from page_objects.pages.search_page import Search
+from page_objects.pages.sign_in_page import SignIn
 
 
 @allure.suite("Nasa Page")
@@ -100,6 +101,7 @@ class TestNasaPage:
         browser.fullscreen_window()
         counsel_page.open_special_counsel_page()
 
+
 @allure.suite("Search")
 class TestSearch:
     @allure.title("Nasa Page Test: check search field")
@@ -170,23 +172,24 @@ class TestSearch:
         search_test.enter()
         search_test.text_search_another_language()
 
+
 @allure.suite("Sign in page")
 class TestSignIn:
     @allure.title("Freedom of Information Act Page Test: check sign in")
-    def test_singin_fqia(self, browser, open_page):
-        sing_in = NasaPage(browser)
-        sing_in.singin_fqia()
+    def test_singin_freedom_of_information(self, browser, open_page):
+        sing_in = SignIn(browser)
+        sing_in.singin_freedom_of_information()
         sing_in.click_head_menu_humans_in()
         sing_in.check_in_sucsessfull()
 
     @allure.title("Freedom of Information Act Page Test: check sign in (neg)")
-    def test_singin_fqia_wrong_data(self, browser, open_page):
-        sing_in = NasaPage(browser)
-        sing_in.singin_fqia_neg1()
+    def test_singin_freedom_of_information_wrong_data(self, browser, open_page):
+        sing_in = SignIn(browser)
+        sing_in.singin_freedom_of_information_neg1()
         sing_in.click_head_menu_humans_in()
 
     @allure.title("Freedom of Information Act Page Test: check sign in (empty field)")
-    def test_singin_fqia_empty_fields(self, browser, open_page):
-        sing_in = NasaPage(browser)
-        sing_in.singin_fqia_neg2()
+    def test_singin_freedom_of_information_empty_fields(self, browser, open_page):
+        sing_in = SignIn(browser)
+        sing_in.singin_freedom_of_information_neg2()
         sing_in.click_head_menu_humans_in()
