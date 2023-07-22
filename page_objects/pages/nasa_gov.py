@@ -1,4 +1,4 @@
-from base_page import BasePage
+from page_objects.pages.base_page import BasePage
 from page_objects.locators.nasa_page_locators import ContainerLocators
 
 

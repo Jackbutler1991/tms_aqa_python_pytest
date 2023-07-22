@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.common.by import By
-from base_page import BasePage
+from page_objects.pages.base_page import BasePage
 from page_objects.locators.search_locators import SearchLocators
 
 
@@ -8,6 +8,7 @@ class Search(BasePage, SearchLocators):
     def __init__(self, browser):
         super().__init__(browser)
         self.locator = SearchLocators()
+
     def search_is_visible(self):
         check = self.element_is_visible(self.locator.SEARCH)
         assert check.is_displayed()
