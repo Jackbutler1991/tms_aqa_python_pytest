@@ -123,7 +123,8 @@ class TestSearch:
         search_test.search_click()
         search_test.text_search_special()
 
-    @allure.title("Nasa Page Test: check search (special characters) and push enter")
+    @allure.title("Nasa Page Test: check "
+                  "search (special characters) and push enter")
     def test_search_input_special_enter(self, browser, open_page):
         search_test = Search(browser)
         search_test.search_input_special()
@@ -151,7 +152,8 @@ class TestSearch:
         search_test.search_click()
         search_test.text_search_more255_symbol()
 
-    @allure.title("Nasa Page Test: check search (more 255 symbols) and push enter")
+    @allure.title("Nasa Page Test: check search"
+                  " (more 255 symbols) and push enter")
     def test_search_input_more_255_symbols_enter(self, browser, open_page):
         search_test = Search(browser)
         search_test.search_input_more255_symbol()
@@ -165,7 +167,8 @@ class TestSearch:
         search_test.search_click()
         search_test.text_search_another_language()
 
-    @allure.title("Nasa Page Test: check search (another language) and push enter")
+    @allure.title("Nasa Page Test: check search"
+                  " (another language) and push enter")
     def test_search_input_another_language_enter(self, browser, open_page):
         search_test = Search(browser)
         search_test.search_input_another_language()
@@ -183,13 +186,14 @@ class TestSignIn:
         sing_in.check_in_sucsessfull()
 
     @allure.title("Freedom of Information Act Page Test: check sign in (neg)")
-    def test_singin_freedom_of_information_wrong_data(self, browser, open_page):
+    def test_singin_freedom_of_inf_wrong_data(self, browser, open_page):
         sing_in = SignIn(browser)
         sing_in.singin_freedom_of_information_neg1()
         sing_in.click_head_menu_humans_in()
 
-    @allure.title("Freedom of Information Act Page Test: check sign in (empty field)")
-    def test_singin_freedom_of_information_empty_fields(self, browser, open_page):
+    @allure.title("Freedom of Information "
+                  "Act Page Test: check sign in (empty field)")
+    def test_singin_freedom_of_inf_empty_fields(self, browser, open_page):
         sing_in = SignIn(browser)
         sing_in.singin_freedom_of_information_neg2()
         sing_in.click_head_menu_humans_in()

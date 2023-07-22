@@ -2,12 +2,14 @@ import time
 from selenium.webdriver.common.by import By
 from page_objects.pages.base_page import BasePage
 from page_objects.locators.search_locators import SearchLocators
+from page_objects.locators.search_data import SearchData
 
 
 class Search(BasePage, SearchLocators):
     def __init__(self, browser):
         super().__init__(browser)
         self.locator = SearchLocators()
+        self.data = SearchData
 
     def search_is_visible(self):
         check = self.element_is_visible(self.locator.SEARCH)
@@ -44,7 +46,7 @@ class Search(BasePage, SearchLocators):
         assert text_element == "Please enter a search term in the box above."
 
     def search_input_more255_symbol(self):
-        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys(self.locator.SEARCH_MORE255_SYMBOLS)
+        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys(self.data.SEARCH_MORE255_SYMBOLS)
 
     def text_search_more255_symbol(self):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
