@@ -2,6 +2,7 @@ import allure
 from page_objects.pages.nasa_gov import NasaPage
 from page_objects.pages.search_page import Search
 from page_objects.pages.sign_in_page import SignIn
+from page_objects.pages.ebook_page import EbookPage
 
 
 @allure.suite("Nasa Page")
@@ -100,6 +101,16 @@ class TestNasaPage:
         counsel_page = NasaPage(browser)
         browser.fullscreen_window()
         counsel_page.open_special_counsel_page()
+
+@allure.suite("Ebook Page")
+class TestEbookPage:
+    # HEADER_EBOOK_PAGE
+    @allure.title("Ebook Page Test: download nasa book")
+    def test_head_menu_missions(self, browser, open_ebook_page):
+        download_ebook = EbookPage(browser)
+        download_ebook.click_to_open_nasa_book_page()
+        download_ebook.click_to_open_nasa_book()
+        download_ebook.assert_if_pdf_nasa_book_open()
 
 
 @allure.suite("Search")

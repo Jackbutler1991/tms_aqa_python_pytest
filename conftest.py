@@ -20,6 +20,11 @@ def open_page(browser):
     browser.get('https://www.nasa.gov/')
     browser.fullscreen_window()
 
+@pytest.fixture
+def open_ebook_page(browser):
+    browser.get('https://www.nasa.gov/connect/ebooks/index.html')
+    browser.fullscreen_window()
+
 
 @pytest.fixture
 def open_no_fear_act_page(browser):
