@@ -2,6 +2,11 @@ import pytest
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from webdriver_manager.core.utils import ChromeType
+import os
+
+prefs = {
+    "download.default_directory": f"{os.getcwd()}/downloads"
+}
 
 
 @pytest.fixture

@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class BasePage:
@@ -23,10 +23,10 @@ class BasePage:
         xpath = (By.XPATH, selector)
         return self.browser.find_element(*xpath)
 
-#    @allure.step('Получить локатор ID')
-#    def get_locator_by_id(self, selector):
-#        id = (By.ID, selector)
-#       return self.browser.find_element(*id)
+    #    @allure.step('Получить локатор ID')
+    #    def get_locator_by_id(self, selector):
+    #        id = (By.ID, selector)
+    #       return self.browser.find_element(*id)
 
     def get_locator_by_slass_name(self, selector):
         # class_name
@@ -60,10 +60,12 @@ class BasePage:
         return locator
 
     def get_element_xpath(self, selector):
-        return WebDriverWait(self.browser, 10).until(ec.element_to_be_clickable((By.XPATH, selector)))
+        return WebDriverWait(self.browser, 10).until(
+            ec.element_to_be_clickable((By.XPATH, selector)))
 
     def get_element(self, selector):
-        return WebDriverWait(self.browser, 10).until(ec.element_to_be_clickable((By.CSS_SELECTOR, selector)))
+        return WebDriverWait(self.browser, 10).until(
+            ec.element_to_be_clickable((By.CSS_SELECTOR, selector)))
 
     def assert_that_element_is_selected(self, selector):
         return self.get_locator_by_css(selector).is_selected()
@@ -72,10 +74,12 @@ class BasePage:
         return self.get_locator_by_xpath(selector).is_selected()
 
     def assert_that_element_is_not_selected_xpath(self, selector):
-        return self.get_locator_by_xpath(selector).is_selected() == False
+        return self.get_locator_by_xpath(
+            selector).is_selected() == False
 
     def open_iframe(self, locator):
-        return self.browser.switch_to.frame(self.browser.find_element(By.XPATH, locator))
+        return self.browser.switch_to.frame(
+            self.browser.find_element(By.XPATH, locator))
 
     def scroll_to_xpath(self, selector):
         locator = self.get_element_xpath(selector)
@@ -100,3 +104,21 @@ class BasePage:
     def push_enter(self, selector):
         locator = self.get_element_xpath(selector)
         locator.send_keys(Keys.ENTER)
+
+    def scroll_to_element(self, locator):
+        element = self.get_locator_by_xpath(locator)
+        return ActionChains(self.browser).scroll_to_element(
+            element).perform()
+
+    def mouse_moving(self, locator):
+        element = self.waiting_element(locator)
+        action = ActionChains(self.browser)
+        return action.move_to_element(element).perform()
+
+    def waiting_element(self, locator):
+        return WebDriverWait(self.browser, 10).until(
+            EC.presence_of_element_located((By.XPATH, locator)))
+
+    def current_url(self):
+        return self.browser.current_url
+

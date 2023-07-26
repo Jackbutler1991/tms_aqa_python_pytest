@@ -1,3 +1,4 @@
+import allure
 from page_objects.pages.base_page import BasePage
 from page_objects.locators.nasa_page_locators import ContainerLocators
 
@@ -88,3 +89,29 @@ class NasaPage(BasePage, ContainerLocators):
         self.click_xpath(self.locator.SPECIAL_COUNSEL)
         current_url = self.get_current_url()
         assert current_url == 'https://osc.gov/'
+
+    @allure.step("fined follow Nasa")
+    def find_categories(self):
+        self.get_locator_by_xpath(self.locator.FOLLOW_NASA_CATEGORIES)
+
+    @allure.step("clicked Follow Nasa")
+    def click_follow_nasa(self):
+        self.mouse_moving(self.locator.FOLLOW_NASA_CATEGORIES)
+        self.click(self.locator.FOLLOW_NASA_SPOT_STATION)
+
+    def click_learn_where(self):
+        self.click(self.locator.LEARN_WHERE_TO_LOOK)
+
+    def click_live_iss(self):
+        self.click(self.locator.LIVE_ISS)
+    @allure.step("clicked Follow Nasa")
+    def click_see_all_faqs(self):
+        self.click(self.locator.SEE_ALL_FAQS)
+
+    @allure.step("click learn where button")
+    def click_follow_nasa(self):
+        self.click(self.locator.FOLLOW_NASA_SPOT_STATION)
+
+    @allure.step("asserted main page is change")
+    def asser_change_main_page_url(self):
+        assert self.current_url() != "https://spotthestation.nasa.gov/"

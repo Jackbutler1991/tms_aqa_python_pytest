@@ -35,6 +35,13 @@ class TestNasaPage:
         test_logo = NasaPage(browser)
         test_logo.assert_that_logo_visible()
 
+    @allure.title("Nasa Page Test: check select from follow Nasa")
+    def test_choose_developer_from_categories(self, browser, open_page):
+        choose_follow_nasa = NasaPage(browser)
+        choose_follow_nasa.find_categories()
+        choose_follow_nasa.click_follow_nasa()
+        choose_follow_nasa.asser_change_main_page_url()
+
     @allure.title("Nasa Page Test: check big news banner")
     def test_bg_card_canvas_is_visible(self, browser, open_page):
         big_card_visible = NasaPage(browser)
@@ -49,6 +56,13 @@ class TestNasaPage:
     def test_text_nasa_events(self, browser, open_page):
         nasa_events_text = NasaPage(browser)
         nasa_events_text.text_nasa_events()
+
+    @allure.title("Nasa Page Test: click learn where to look")
+    def test_choose_developer_from_categories(self, browser, open_page):
+        click_learn_where = NasaPage(browser)
+        click_learn_where.find_categories()
+        click_learn_where.click_learn_where()
+        click_learn_where.asser_change_main_page_url()
 
     @allure.title("Nasa Page Test: check text in nasa tv shedule")
     def test_text_nasa_tv_shedule(self, browser, open_page):
@@ -66,6 +80,13 @@ class TestNasaPage:
         browser.fullscreen_window()
         flight_page.open_flight_page()
 
+    @allure.title("Nasa Page Test: click live iss")
+    def test_choose_developer_from_categories(self, browser, open_page):
+        click_live_iss = NasaPage(browser)
+        click_live_iss.find_categories()
+        click_live_iss.click_live_iss()
+        click_live_iss.asser_change_main_page_url()
+
     @allure.title("Nasa Page Test: open solar system page")
     def test_open_solar_system_page(self, browser, open_page):
         solar_system_page = NasaPage(browser)
@@ -77,6 +98,13 @@ class TestNasaPage:
         stem_engagement = NasaPage(browser)
         browser.fullscreen_window()
         stem_engagement.open_stem_engagement_page()
+
+    @allure.title("Nasa Page Test: click see all faqs")
+    def test_choose_developer_from_categories(self, browser, open_page):
+        click_see_all_faqs = NasaPage(browser)
+        click_see_all_faqs.find_categories()
+        click_see_all_faqs.click_see_all_faqs()
+        click_see_all_faqs.asser_change_main_page_url()
 
     # FOOTER_NASA_PAGE
     @allure.title("Nasa Page footer Test: chek text")
@@ -102,15 +130,50 @@ class TestNasaPage:
         browser.fullscreen_window()
         counsel_page.open_special_counsel_page()
 
+
 @allure.suite("Ebook Page")
 class TestEbookPage:
     # HEADER_EBOOK_PAGE
-    @allure.title("Ebook Page Test: download nasa book")
-    def test_head_menu_missions(self, browser, open_ebook_page):
-        download_ebook = EbookPage(browser)
-        download_ebook.click_to_open_nasa_book_page()
-        download_ebook.click_to_open_nasa_book()
-        download_ebook.assert_if_pdf_nasa_book_open()
+    @allure.title("Ebook Page Test: open nasa book")
+    def test_open_nasa_ebook_pdf(self, browser, open_ebook_page):
+        open_ebook_pdf = EbookPage(browser)
+        open_ebook_pdf.click_to_open_nasa_book_page()
+        open_ebook_pdf.click_to_open_nasa_book_pdf()
+        open_ebook_pdf.assert_if_pdf_nasa_book_open()
+
+    @allure.title("Ebook Page Test: open The wind book")
+    def test_open_the_wind_ebook_epub(self, browser, open_ebook_page):
+        open_ebook_upub = EbookPage(browser)
+        open_ebook_upub.click_to_open_the_wind_book_page()
+        open_ebook_upub.click_to_open_the_wind_book_pdf()
+        open_ebook_upub.assert_if_pdf_the_wind_book_open()
+
+    @allure.title("Ebook Page Test: open More Stories")
+    def test_click_more_stories(self, browser, open_ebook_page):
+        more_stories = EbookPage(browser)
+        more_stories.click_more_stories()
+        more_stories.scroll_to_last_book()
+        more_stories.assert_open_more_book()
+
+    @allure.title("Ebook Page Test: check click Accessibility on footer")
+    def test_click_asessibility(self, browser, open_ebook_page):
+        accessibility_footer = EbookPage(browser)
+        accessibility_footer.scroll_to_ebook_footer()
+        accessibility_footer.click_accessibility_footer()
+        accessibility_footer.assert_accessibility_is_displayed()
+
+    @allure.title("Ebook Page Test: check logo footer is displayed")
+    def test_logo_is_displayed_footer(self, browser, open_ebook_page):
+        logo_footer_displayed = EbookPage(browser)
+        logo_footer_displayed.scroll_to_footer()
+        logo_footer_displayed.click_logo_footer()
+        logo_footer_displayed.check_url()
+
+    @allure.title("Ebook Page Test: click on logo footer")
+    def test_logo_is_displayed_footer(self, browser, open_ebook_page):
+        click_logo_footer = EbookPage(browser)
+        click_logo_footer.scroll_to_footer()
+        click_logo_footer.check_logo_is_displayed()
 
 
 @allure.suite("Search")

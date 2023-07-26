@@ -17,6 +17,13 @@ class ContainerLocators():
 
     LOGO = get_locator_by_id('"navbar-nasa"]//img')
 
+    FOLLOW_NASA_CATEGORIES = get_locator_by_id('"nasa-main-menu"]/li[5]//span[1]')
+    FOLLOW_NASA_SPOT_STATION = get_locator_by_id('"nasa-main-menu"]/li[5]//li[7]/a')
+    LEARN_WHERE_TO_LOOK = ('//div[5]/div[1]/div[2]//a')
+    LIVE_ISS = ('//div[3]/div[1]/div[2]//a')
+    SEE_ALL_FAQS = ('//div[4]/div[1]/div[2]//a')
+
+
     # BODY
     BG_CARD_CANVAS = get_locator_by_id('"ember166"]/div')
     NASA_EVENTS_CARD = get_locator_by_id('"cards"]/div[1]/div')
