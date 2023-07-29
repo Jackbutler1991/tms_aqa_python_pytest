@@ -14,14 +14,18 @@ class SignIn(BasePage, SignInLocators):
     @allure.step("singin to freedom of information")
     def singin_freedom_of_information(self):
         self.browser.get('https://pal.hq.nasa.gov/app/PalLogin.aspx')
-        self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]').send_keys(self.data.TEST_LOGIN)
-        self.browser.find_element(By.XPATH, '//*[@id="uxPassword"]').send_keys(self.data.TEST_PASSWORD)
+        self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]') \
+            .send_keys(self.data.TEST_LOGIN)
+        self.browser.find_element(By.XPATH, '//*[@id="uxPassword"]') \
+            .send_keys(self.data.TEST_PASSWORD)
 
     @allure.step("singin to freedom of information, negative")
     def singin_freedom_of_information_neg1(self):
         self.browser.get('https://pal.hq.nasa.gov/app/PalLogin.aspx')
-        self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]').send_keys(self.data.TEST_LOGIN_1)
-        self.browser.find_element(By.XPATH, '//*[@id="uxPassword"]').send_keys(self.data.TEST_PASSWORD_1)
+        self.browser.find_element(By.XPATH, '//*[@id="uxUserName"]') \
+            .send_keys(self.data.TEST_LOGIN_1)
+        self.browser.find_element(By.XPATH, '//*[@id="uxPassword"]') \
+            .send_keys(self.data.TEST_PASSWORD_1)
 
     @allure.step("singin to freedom of information, empty field")
     def singin_freedom_of_information_neg2(self):
@@ -33,6 +37,7 @@ class SignIn(BasePage, SignInLocators):
 
     @allure.step("check if sign ib is successful")
     def check_in_sucsessfull(self):
-        text_element = self.check_text_by_xpath(self.locator.SING_IN_SUCCESSFUL)
+        text_element = self.check_text_by_xpath(self.
+                                                locator.SING_IN_SUCCESSFUL)
         print(text_element)
         assert text_element == "Sign in Successful."

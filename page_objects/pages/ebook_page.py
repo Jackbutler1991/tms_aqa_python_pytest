@@ -27,14 +27,16 @@ class EbookPage(BasePage, EbookPageLocators):
     @allure.step("assert open book")
     def assert_if_pdf_the_wind_book_open(self):
         current_url = self.get_current_url()
-        assert current_url == 'https://www.nasa.gov/sites/default/' \
-                              'files/atoms/files/the_wind_and_beyond_tagged.pdf'
+        assert current_url == 'https://www.nasa.gov/' \
+                              'sites/default/files/atoms/files' \
+                              '/the_wind_and_beyond_tagged.pdf'
 
     @allure.step("assert open book")
     def assert_if_pdf_nasa_book_open(self):
         current_url = self.get_current_url()
-        assert current_url == 'https://www.nasa.gov/sites/default' \
-                              '/files/atoms/files/naca_to_nasa_to_now_tagged.pdf'
+        assert current_url == 'https://www.nasa.gov/sites' \
+                              '/default/files/atoms/files/' \
+                              'naca_to_nasa_to_now_tagged.pdf'
 
     @allure.step("click more stories")
     def click_more_stories(self):

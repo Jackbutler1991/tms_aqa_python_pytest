@@ -117,8 +117,7 @@ class BasePage:
 
     def waiting_element(self, locator):
         return WebDriverWait(self.browser, 10).until(
-            EC.presence_of_element_located((By.XPATH, locator)))
+            ec.presence_of_element_located((By.XPATH, locator)))
 
     def current_url(self):
         return self.browser.current_url
-

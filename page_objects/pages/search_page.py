@@ -19,8 +19,8 @@ class Search(BasePage, SearchLocators):
 
     @allure.step("find search input")
     def search_input(self):
-        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('moon')
-        time.sleep(1)
+        self.browser.find_element(By.XPATH,
+                                  self.locator.SEARCH_INPUT).send_keys('moon')
 
     @allure.step("click search")
     def search_click(self):
@@ -28,51 +28,60 @@ class Search(BasePage, SearchLocators):
         time.sleep(1)
 
     @allure.step("check searched text")
-    def text_search_moon(self):
+    def check_search_moon(self):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_MOON)
         print(text_element)
         assert text_element == "News about moon"
 
     @allure.step("find search input")
     def search_input_special(self):
-        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('++-')
+        self.browser.find_element(By.XPATH,
+                                  self.locator.SEARCH_INPUT).send_keys('++-')
         time.sleep(1)
 
     @allure.step("check searched resalt")
-    def text_search_special(self):
+    def check_search_special(self):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
         print(text_element)
-        assert text_element == "Sorry, no results found for '++-'. Try entering fewer or more general search terms."
+        assert text_element == "Sorry, no results found for" \
+                               " '++-'. Try entering fewer or " \
+                               "more general search terms."
 
     @allure.step("input one sumbol in search")
     def search_input_one_symbol(self):
-        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('1')
+        self.browser.find_element(By.XPATH,
+                                  self.locator.SEARCH_INPUT).send_keys('1')
 
     @allure.step("check text searched one sumbol")
-    def text_search_one_symbol(self):
+    def check_search_one_symbol(self):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
         print(text_element)
         assert text_element == "Please enter a search term in the box above."
 
     @allure.step("input 255 sumbol in search")
     def search_input_more255_symbol(self):
-        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys(self.data.SEARCH_MORE255_SYMBOLS)
+        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT)
+        self.browser.send_keys(self.data.SEARCH_MORE255_SYMBOLS)
 
     @allure.step("check text searched 255 sumbol")
-    def text_search_more255_symbol(self):
+    def check_search_more255_symbol(self):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
         print(text_element)
-        assert text_element == "Your search term is too long. Try again using a shorter word or phrase."
+        assert text_element == "Your search term is too long." \
+                               " Try again using a shorter word or phrase."
 
     @allure.step("input another language in search")
     def search_input_another_language(self):
-        self.browser.find_element(By.XPATH, self.locator.SEARCH_INPUT).send_keys('луна')
+        self.browser.find_element(By.XPATH, self.locator.
+                                  SEARCH_INPUT).send_keys('луна')
 
     @allure.step("check text searched another language")
-    def text_search_another_language(self):
+    def check_search_another_language(self):
         text_element = self.check_text_by_xpath(self.locator.SEARCH_NO_RESULT)
         print(text_element)
-        assert text_element == "Sorry, no results found for 'луна'. Try entering fewer or more general search terms."
+        assert text_element == "Sorry, no results found for " \
+                               "'луна'. Try entering fewer or " \
+                               "more general search terms."
 
     @allure.step("push Enter from keyboard")
     def enter(self):
